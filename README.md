@@ -1,8 +1,6 @@
 # credit-delinquency-ML-XAI
 
 **머신러닝 + XAI(SHAP) 기반 신용카드 연체 예측 프로젝트**
-LightGBM/XGBoost/RandomForest를 비교하고, Optuna 기반 튜닝 및 SHAP 기반 설명가능성(XAI)을 적용해 **예측 성능 + 해석 가능성**을 동시에 확보
-
 ---
 
 ## 🖥️ 프로젝트 소개
@@ -15,7 +13,7 @@ LightGBM/XGBoost/RandomForest를 비교하고, Optuna 기반 튜닝 및 SHAP 기
 
 ## 🕰️ 개발 기간
 
-* 2025.10.15 - 2025.12.15
+* 2025.9.11 - 2025.2.9
 
 ---
 
@@ -23,7 +21,8 @@ LightGBM/XGBoost/RandomForest를 비교하고, Optuna 기반 튜닝 및 SHAP 기
 
 * 유지현
 * 김**
-* 
+* 김**
+* 정**
 
 ---
 
@@ -71,18 +70,17 @@ LightGBM/XGBoost/RandomForest를 비교하고, Optuna 기반 튜닝 및 SHAP 기
 ## ⚙️ 개발 환경
 
 * **Language**: Python
-* **ML Models**: LightGBM, XGBoost, RandomForest fileciteturn0file0
-* **Hyperparameter Tuning**: Optuna fileciteturn0file0
-* **Validation**: Stratified K-Fold Cross Validation(K=5) fileciteturn0file0
-* **Imbalanced Learning**: SMOTE fileciteturn0file0
-* **XAI**: SHAP(Shapley Additive Explanations) fileciteturn0file0
-* **Dataset**: Kaggle Credit Card Users Dataset (N=26,457) fileciteturn0file0
+* **ML Models**: LightGBM, XGBoost, RandomForest 
+* **Hyperparameter Tuning**: Optuna 
+* **Validation**: Stratified K-Fold Cross Validation(K=5) 
+* **Imbalanced Learning**: SMOTE 
+* **XAI**: SHAP(Shapley Additive Explanations) 
+* **Dataset**: Kaggle Credit Card Users Dataset (N=26,457) 
 
 ---
 
 ## 📁 프로젝트 구조
 
-> 아래는 포트폴리오용 예시 구조이며, 실제 레포 구조에 맞춰 조정 가능합니다.
 
 ```bash
 credit-delinquency-ML-XAI/
