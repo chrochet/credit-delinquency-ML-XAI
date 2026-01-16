@@ -30,7 +30,7 @@
 
 **한국디지털콘텐츠학회 하계종합학술대회 대학생 논문경진대회 동상**
 
-**KCI논문등재**
+KCI논문등재
 https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003284895
 ---
 
