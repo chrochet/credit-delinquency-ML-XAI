@@ -30,6 +30,8 @@
 
 **한국디지털콘텐츠학회 하계종합학술대회 대학생 논문경진대회 동상**
 
+**KCI논문등재**
+https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003284895
 ---
 
 ## 🧩 연구 / 시스템 구조 (Workflow)
@@ -79,42 +81,16 @@
 
 ---
 
-## 📁 프로젝트 구조
-
-
-```bash
-credit-delinquency-ML-XAI/
-├─ data/
-│  ├─ raw/
-│  └─ processed/
-├─ notebooks/
-│  ├─ 01_eda.ipynb
-│  ├─ 02_model_training.ipynb
-│  └─ 03_shap_analysis.ipynb
-├─ src/
-│  ├─ preprocessing.py
-│  ├─ train.py
-│  ├─ tune_optuna.py
-│  ├─ evaluate.py
-│  └─ explain_shap.py
-├─ results/
-│  ├─ metrics/
-│  └─ figures/
-└─ README.md
-```
-
----
-
 ## 📌 주요 기능
 
 ### 01 데이터 수집 및 전처리
-[상세보기 · WIKI]()
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/01.-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A7%91-%EC%A0%84%EC%B2%98%EB%A6%AC)
 * Kaggle 데이터 기반 인구통계·경제 변수 확보
 * 범주형 변수 원-핫 인코딩 적용
 * 학습/테스트 데이터 **7:3 분할** 및 층화추출(Stratified sampling) 적용 
 
 ### 02 클래스 불균형 처리 (SMOTE)
-[상세보기 · WIKI]()
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/02.-SMOTE-%EB%B6%88%EA%B7%A0%ED%98%95-%EC%B2%98%EB%A6%AC)
 * 목표 변수의 심각한 불균형으로 인한 모델 편향 문제 개선
 * 학습 데이터에서 SMOTE 적용 후 **양 클래스 균형(16,264건)** 확보
 
