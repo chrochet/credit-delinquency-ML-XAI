@@ -45,12 +45,12 @@ https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArti
 2. **타겟(라벨) 정의**
 
 * `delinquency`: 0(안정), 1(주의), 2(위험)
-* 본 연구 목적에 맞춰 **0 → 0**, **(1,2) → 1**로 통합하여 **이진 분류 문제로 재정의** fileciteturn0file0
+* 본 연구 목적에 맞춰 **0 → 0**, **(1,2) → 1**로 통합하여 **이진 분류 문제로 재정의**
 
 3. **클래스 불균형 처리(SMOTE)**
 
 * 클래스 분포가 심각하게 불균형하여 학습 편향 가능성 존재
-* 학습 세트에 한해 **SMOTE 적용**, 최종적으로 두 클래스 모두 16,264건으로 균형화 fileciteturn0file0
+* 학습 세트에 한해 **SMOTE 적용**, 최종적으로 두 클래스 모두 16,264건으로 균형화 
 
 4. **모델 학습 및 하이퍼파라미터 튜닝(Optuna)**
 
@@ -60,12 +60,12 @@ https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArti
 5. **모델 성능 평가(교차검증)**
 
 * **Stratified K-Fold 교차검증(K=5)** 적용
-* Accuracy / Precision / Recall / F1-score로 성능 비교 fileciteturn0file0
+* Accuracy / Precision / Recall / F1-score로 성능 비교 
 
 6. **설명가능성 확보(XAI: SHAP)**
 
 * LightGBM에 대해 변수중요도 및 SHAP 분석 수행
-* 예측에 영향을 미치는 핵심 변수와 방향성을 시각화하여 **모델 투명성 및 해석 가능성 확보** fileciteturn0file0
+* 예측에 영향을 미치는 핵심 변수와 방향성을 시각화하여 **모델 투명성 및 해석 가능성 확보** 
 
 ---
 
@@ -95,45 +95,22 @@ https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArti
 * 학습 데이터에서 SMOTE 적용 후 **양 클래스 균형(16,264건)** 확보
 
 ### 03 머신러닝 모델 학습 및 비교
-[상세보기 · WIKI]()
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/03.-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%AA%A8%EB%8D%B8-%ED%95%99%EC%8A%B5-%EB%B0%8F-%EB%B9%84%EA%B5%90)
 * RandomForest / XGBoost / LightGBM 모델 구축
 * 앙상블 기반 모델의 학습 방식 차이 비교(배깅 vs 부스팅)
 
 ### 04 Optuna 기반 하이퍼파라미터 최적화
-[상세보기 · WIKI]()
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/04.-%ED%95%98%EC%9D%B4%ED%8D%BC%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EC%B5%9C%EC%A0%81%ED%99%94)
 * 모델별 탐색 공간 정의 후 최적 조합 도출
 * 규제/샘플링/트리 깊이 등 파라미터를 함께 최적화 
 
 ### 05 성능 평가 및 최종 모델 선정
-[상세보기 · WIKI]()
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/05.-%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80-%EB%B0%8F-%EC%B5%9C%EC%A2%85-%EB%AA%A8%EB%8D%B8-%EC%84%A0%EC%A0%95)
 * Accuracy / Precision / Recall / F1-score로 성능 평가
 * LightGBM이 **Recall 및 F1-score에서 최고 성능**으로 최종 선정 
 
 ### 06 XAI(SHAP) 기반 모델 해석
-[상세보기 · WIKI]()
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/06.-XAI(SHAP)-%EA%B8%B0%EB%B0%98-%EB%AA%A8%EB%8D%B8-%ED%95%B4%EC%84%9D)
 * 변수 중요도 + 예측 기여 방향을 함께 제시
 * 단순 정확도뿐 아니라 **연체 위험 요인의 구조적 이해**를 지원
-
----
-
-## 🔍 변수 중요도 및 SHAP 인사이트
-
-변수 중요도 및 SHAP 분석을 통해 다음과 같은 핵심 요인을 확인했습니다. fileciteturn0file0
-
-### ✅ 핵심 영향 변수(상위)
-
-* `month_card_issued` (신용카드 발급 경과 월 수)
-* `days_birth` (출생 후 경과 일 수)
-* `days_employed` (취업 후 경과 일 수)
-* `income_total` (총소득)
-* `family_size` (가족 구성원 수)
-
-### ✅ 해석 요약
-
-* `month_card_issued`가 높을수록 **연체 위험 증가 경향**
-* `income_total`은 값이 클수록 전반적으로 **연체 위험 감소 경향(음의 기여 우세)**
-* 가족 관련 변수는 **규모(family_size)**와 **구조(기혼 여부)**가 서로 다른 방식으로 위험에 영향을 미침
-
-  * 가족 규모가 커질수록 위험 증가 경향
-  * 기혼(`family_type_married`)은 위험 감소(안정 효과) fileciteturn0file0
 
