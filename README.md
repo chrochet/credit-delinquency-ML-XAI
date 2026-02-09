@@ -34,6 +34,8 @@ KCI논문등재
 https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003284895
 ---
 
+
+
 ## 🧩 연구 / 시스템 구조 (Workflow)
 
 1. **데이터 수집 및 전처리**
@@ -52,12 +54,14 @@ https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArti
 * 클래스 분포가 심각하게 불균형하여 학습 편향 가능성 존재
 * 학습 세트에 한해 **SMOTE 적용**, 최종적으로 두 클래스 모두 16,264건으로 균형화 
 
-6. **모델 성능 평가(교차검증)**
+4. **모델 성능 평가(교차검증)**
 
 * **Stratified K-Fold 교차검증(K=5)** 적용
-* Accuracy / Precision / Recall / F1-score로 성능 비교 
+* Accuracy / Precision / Recall / F1-score로 성능 비교
 
-7. **설명가능성 확보(XAI: SHAP)**
+5. **변수중요도 결과**
+
+6. **설명가능성 확보(XAI: SHAP)**
 
 * LightGBM에 대해 변수중요도 및 SHAP 분석 수행
 * 예측에 영향을 미치는 핵심 변수와 방향성을 시각화하여 **모델 투명성 및 해석 가능성 확보** 
