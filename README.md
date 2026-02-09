@@ -92,14 +92,16 @@ https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArti
 ### 03 머신러닝 모델 학습 및 비교
 [상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/03.-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%AA%A8%EB%8D%B8-%ED%95%99%EC%8A%B5-%EB%B0%8F-%EB%B9%84%EA%B5%90)
 * RandomForest / XGBoost / LightGBM 모델 구축
-* 앙상블 기반 모델의 학습 방식 차이 비교(배깅 vs 부스팅)
+
 
 ### 04 성능 평가 및 최종 모델 선정
-[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/05.-%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80-%EB%B0%8F-%EC%B5%9C%EC%A2%85-%EB%AA%A8%EB%8D%B8-%EC%84%A0%EC%A0%95)
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/04.-%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80-%EB%B0%8F-%EC%B5%9C%EC%A2%85-%EB%AA%A8%EB%8D%B8-%EC%84%A0%EC%A0%95)
 * Accuracy / Precision / Recall / F1-score로 성능 평가
-* LightGBM이 **Recall 및 F1-score에서 최고 성능**으로 최종 선정 
+  
 
 ### 05 변수중요도 결과
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/05.-%EB%B3%80%EC%88%98%EC%A4%91%EC%9A%94%EB%8F%84)
+
 
 ### 06 XAI(SHAP) 기반 모델 해석
 [상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/06.-XAI(SHAP)-%EA%B8%B0%EB%B0%98-%EB%AA%A8%EB%8D%B8-%ED%95%B4%EC%84%9D)
