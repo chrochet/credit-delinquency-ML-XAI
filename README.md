@@ -99,18 +99,19 @@ https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArti
 * RandomForest / XGBoost / LightGBM 모델 구축
 * 앙상블 기반 모델의 학습 방식 차이 비교(배깅 vs 부스팅)
 
-### 04 Optuna 기반 하이퍼파라미터 최적화
-[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/04.-%ED%95%98%EC%9D%B4%ED%8D%BC%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EC%B5%9C%EC%A0%81%ED%99%94)
-* 모델별 탐색 공간 정의 후 최적 조합 도출
-* 규제/샘플링/트리 깊이 등 파라미터를 함께 최적화 
-
-### 05 성능 평가 및 최종 모델 선정
+### 04 성능 평가 및 최종 모델 선정
 [상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/05.-%EC%84%B1%EB%8A%A5-%ED%8F%89%EA%B0%80-%EB%B0%8F-%EC%B5%9C%EC%A2%85-%EB%AA%A8%EB%8D%B8-%EC%84%A0%EC%A0%95)
 * Accuracy / Precision / Recall / F1-score로 성능 평가
 * LightGBM이 **Recall 및 F1-score에서 최고 성능**으로 최종 선정 
 
-### 06 XAI(SHAP) 기반 모델 해석
+### 07 XAI(SHAP) 기반 모델 해석
 [상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/06.-XAI(SHAP)-%EA%B8%B0%EB%B0%98-%EB%AA%A8%EB%8D%B8-%ED%95%B4%EC%84%9D)
 * 변수 중요도 + 예측 기여 방향을 함께 제시
 * 단순 정확도뿐 아니라 **연체 위험 요인의 구조적 이해**를 지원
+
+
+### extra) 기반 하이퍼파라미터 최적화
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/04.-%ED%95%98%EC%9D%B4%ED%8D%BC%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EC%B5%9C%EC%A0%81%ED%99%94)
+* 모델별 탐색 공간 정의 후 최적 조합 도출
+* 규제/샘플링/트리 깊이 등 파라미터를 함께 최적화 
 
