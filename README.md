@@ -99,7 +99,9 @@ https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArti
 * Accuracy / Precision / Recall / F1-score로 성능 평가
 * LightGBM이 **Recall 및 F1-score에서 최고 성능**으로 최종 선정 
 
-### 07 XAI(SHAP) 기반 모델 해석
+### 05 변수중요도 결과
+
+### 06 XAI(SHAP) 기반 모델 해석
 [상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/06.-XAI(SHAP)-%EA%B8%B0%EB%B0%98-%EB%AA%A8%EB%8D%B8-%ED%95%B4%EC%84%9D)
 * 변수 중요도 + 예측 기여 방향을 함께 제시
 * 단순 정확도뿐 아니라 **연체 위험 요인의 구조적 이해**를 지원
