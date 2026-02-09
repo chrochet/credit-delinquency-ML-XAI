@@ -110,7 +110,7 @@ https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArti
 
 
 ### extra) 기반 하이퍼파라미터 최적화
-[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/04.-%ED%95%98%EC%9D%B4%ED%8D%BC%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EC%B5%9C%EC%A0%81%ED%99%94)
+[상세보기 · WIKI](https://github.com/chrochet/credit-delinquency-ML-XAI/wiki/extra)-%ED%95%98%EC%9D%B4%ED%8D%BC%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EC%B5%9C%EC%A0%81%ED%99%94)
 * 모델별 탐색 공간 정의 후 최적 조합 도출
 * 규제/샘플링/트리 깊이 등 파라미터를 함께 최적화 
 
